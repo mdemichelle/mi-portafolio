@@ -31,6 +31,9 @@ header{
     font-family: 'Titillium Web', sans-serif;
 }
 
+.exp{
+    background-color:   #85cfa6  ;
+}
 
 @media only screen and (max-width: 800px) {
 
