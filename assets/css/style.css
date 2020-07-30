@@ -7,15 +7,10 @@ body{
 
 .titles{
     font-family: 'Titillium Web', sans-serif;
-    font-size: 22px;
 }
 
-.navColor{
+.colorPrincipal{
     background-color: #477e6b;
-}
-
-.logo{
-    width: 50%;
 }
 
 header{
@@ -27,13 +22,14 @@ header{
     background-position:center;
 }
 
-.titulo1{
-    font-family: 'Titillium Web', sans-serif;
+
+
+.logo{
+    height: 60%;
+    width: 30%;
 }
 
-.exp{
-    background-color:   #85cfa6  ;
-}
+
 
 @media only screen and (max-width: 800px) {
 
