@@ -60,9 +60,20 @@ a{
     height: 500px;
 }
 
+.carousel-indicators {
+    top: 50px;
+    background-color: black;
+  }
+  
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+  }
 
-
-@media (max-width: 800px)
+ @media (max-width: 800px)
 {
     .fa-2x{
         font-size: 0.5em;
