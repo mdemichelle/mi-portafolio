@@ -11,31 +11,34 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Michelle</title>
   </head>
   <body>
 
     <!----------------------------------------- Sección 1, Barra de Navegación---------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark colorPrincipal titles">
+    <nav class="navbar navbar-expand-lg navbar-dark colorPrincipal titles fixed-top">
         <div class="container">
-        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="logo" alt="logo del sitio"></a>
+        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="logoPrincipal" alt="logo del sitio"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre mí <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#sobremi">Sobre mí <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Mi experiencia</a>
+              <a class="nav-link" href="#exp">Mi experiencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Mis proyectos</a>
+              <a class="nav-link" href="#trabajos">Mis proyectos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">¡Contáctame!</a>
+                <a class="nav-link" href="#contacto">¡Contáctame!</a>
               </li>
             
           </ul>
@@ -44,23 +47,26 @@
       </nav>
 
       <!-----------------------------------------------------Seccion 2, Encabezado------------------------------------------->
-      <header class=" text-white d-flex justify-content-end align-items-end text-right py-5">
-        <div class="container mb-3">
+      <header class=" text-white d-flex justify-content-end align-items-end text-right py-5 mt-4 ">
+        <div id="sobremi" class="container mb-3">
           <h1 class="titles display-3 font-weight-bold">MICHELLE</h1>
           
           <h2 class="titles ">Analista Programador</h2>
-          <a class="btn btn-lg btn-outline-dark my-3">Trabajos</a>
-          <a class="btn btn-lg colorPrincipal my-3">Contacto</a>
+          <a class="btn btn-lg btn-outline-dark my-3 text-white font-weight-bold" href="#trabajos">Trabajos</a>
+          <a class="btn btn-lg colorPrincipal my-3" href="#contacto" >Contacto</a>
         </div>
       </header>
 
      <!------------------------------------------------------Seccion 3, Sobre mí------------------------------------------------>
-    <section class="container text-center my-5">
-      <h2 class="titles display-3 my-3">Sobre mí</h2>
+    <section  class="container text-center my-5 d-none d-sm-block">
+      <h2 class="titles font-weight-bold display-3 my-3">Sobre mí</h2>
       <hr>
       <div class="row">
         <div class="col-md-6">
-          <p class="my-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam reiciendis possimus autem earum magni quas, distinctio temporibus voluptatibus architecto aspernatur. Nesciunt totam rerum tenetur sit quaerat iusto quod similique perspiciatis.</p>
+          <p class="my-3 text-justify">Soy Michelle Miranda y tengo 26 años. Soy chilena y vivo en Santiago. 
+            Estudié Analista Programador en INACAP. Me titulé en Marzo del 2020 y actualmente estoy en busca de trabajo. <br>
+          Me apasiona la tecnología y aprender cosas nuevas. Suelo ponerme desafíos y metas para especializarme y desarrollarme como
+        profesional. Actualmente estoy realizando un curso de Front-End para capacitarme y agrandar mi portafolio.</p>
           
         </div>
         <div class="col-md-6">
@@ -70,8 +76,9 @@
     </section>
 
     <!-------------------------------------------------Seccion 4, Mi experiencia------------------------------------------------------>
-    <section class="cointainer-fluid text-center my-5 p-5">
-      <h2 class="titles display-3 my-4">Mi Experiencia</h2>
+    <section id="exp" class="cointainer-fluid text-center my-5 p-5">
+      <h2 class="titles font-weight-bold display-3 my-4">Mi Experiencia</h2>
+      <hr>
       <div class="row">
         <div class="col-md-6">
           <img src="assets/img/database.png" class="logo my-3" alt="Bases de datos">
@@ -88,16 +95,17 @@
 
 
       <!----------------------------------Sección 5, Mis trabajos---------------------------------------------------->
-      <section class="container-fluid colorPrincipal my-5 p-5">
-        <h2 class="titles text-white display-3 text-center my-4">Mis Trabajos</h2>
+      <section id="trabajos" class="container-fluid my-5 p-5 trabajo">
+        <h2 class="titles font-weight-bold text-white display-3 text-center my-4">Mis Proyectos</h2>
+        
         <div class="row my-5">
           <div class="card-deck">
             <div class="card">
             <img class="card-img-top" src="assets/img/coffee.JPG" alt="Card image cap">
-            <div class="card-body">
+            <div class="card-body">            
             <h5 class="card-title font-weight-bold titles">Meet & Coffee</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.</p>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn border" href="https://michellemb306.github.io/Meet-Coffee/" target="_blank">Ver</a>
             </div>
             </div>
             <div class="card">
@@ -106,14 +114,15 @@
             <h5 class="card-title font-weight-bold titles">Iguana Page</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
             </p>
+            <a class="btn border" href="#" target="_blank">Ver</a>
             </div>
             </div>
             <div class="card">
             <img class="card-img-top" src="assets/img/suricata.JPG" alt="suricata">
             <div class="card-body">
             <h5 class="card-title font-weight-bold titles">Suricata</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn border" href="#" target="_blank">Ver</a>
             </div>
             </div>
             </div>
@@ -124,8 +133,7 @@
             <img class="card-img-top" src="assets/img/cuppon.JPG" alt="cuppon">
             <div class="card-body">
             <h5 class="card-title font-weight-bold titles">Cuppon</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.</p>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             </div>
             </div>
             <div class="card">
@@ -140,8 +148,7 @@
             <img class="card-img-top" src="assets/img/oliviaros.JPG" alt="Olivia Ros">
             <div class="card-body">
             <h5 class="card-title font-weight-bold titles">Olivia Ros</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
             </div>
             </div>
             </div>
@@ -149,7 +156,23 @@
       </section>
 
     <!-----------------------------------------Sección 6, Contacto-------------------------------------------------------->
-   <!--Js JQuery-->
+      <section id="contacto" class="container text-center my-5">
+        <h2 class="display-3 titles font-weight-bold  my-4">Contacto</h2>
+        <hr>
+        <p class="my-5">¿Quieres conocer más acerca de mí?</p>
+        <div class="typeform-widget" data-url="https://mdemichelle7.typeform.com/to/qijyvhLk"></div>  </div>
+      </section>
+
+      <footer class=" colorPrincipal titles text-center text-light p-3">
+        <img src="assets/img/logo.png" class="logoFooter mr-5" alt="logo del sitio">
+       
+          <a href='https://github.com/michellemb306' target="_blank"><i class="fab fa-github fa-2x mx-3" aria-hidden="true"></i></a>
+            <a href='https://www.linkedin.com/in/michellemirandab/' target="_blank"><i class="fab fa-linkedin fa-2x mx-3" aria-hidden="true"></i></a>
+              <a href='https://twitter.com/?lang=esface' target="_blank"><i class="fab fa-twitter fa-2x mx-3" aria-hidden="true"></i></a>
+                <a href='https://facebook.com/' target="_blank"><i class="fab fa-facebook-square fa-2x mx-3" aria-hidden="true"></i></a>
+      
+      </footer>
+    <!--Js JQuery-->
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -166,5 +189,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
