@@ -72,7 +72,7 @@ a{
  @media (max-width: 800px)
 {
     .fa-2x{
-        font-size: 0.5em;
+        font-size: 0.4em;
     }
 
     .logoFooter{
@@ -87,5 +87,9 @@ a{
 
     .titles{
         font-size: 36px;
+    }
+
+    .me{
+        font-size: 20px;
     }
 }
